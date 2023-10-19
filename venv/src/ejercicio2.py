@@ -1,6 +1,7 @@
-def araños():
-    edad = int(input())
+def anos(edad):
     for num in range(edad):
-        return num
-    
-def mostartaños(edad):
+        print("Tienes", num+1, "años")
+
+if __name__ == "__main__":
+    edad = int(input("Cuantos años tienes? "))
+    anos(edad)
