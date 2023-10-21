@@ -3,12 +3,21 @@
 
 
 def mostrar(palabra):
-    cont = 0
-    while cont < 9:
-        cont = cont +1
+    for i in range(10):
         print(palabra)
     return palabra
 
+def mensaje():
+    resultado = mostrar(palabra)
+    print(resultado)
+    
+    
 if __name__ == "__main__":
+    
+    ##ENTRADA
+    
     palabra = input("Escribe una palabra: ")
-    print(mostrar(palabra))
+    
+    ##SALIDA
+    
+    mensaje()

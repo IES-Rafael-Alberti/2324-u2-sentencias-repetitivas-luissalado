@@ -5,9 +5,10 @@
 ##PROCESO
 
 def triangulo(altura):
-    for i in range(1,altura):
-        triangulo = i*"*"
-    return triangulo
+    resultado = ""
+    for i in range(altura):
+        resultado += "*" * (i + 1) + "\n"
+    return resultado
 
 
 if __name__ == "__main__":

@@ -1,7 +1,26 @@
+##Escribir un programa que pregunte al usuario su edad y muestre por pantalla todos los años que 
+# ha cumplido (desde 1 hasta su edad).
+
+##proceso
+
 def anos(edad):
+    result = []
     for num in range(edad):
-        print("Tienes", num+1, "años")
+        result.append(f"Tienes {num+1} años")
+    return result
+
+def mensaje():
+    resultado = anos(edad)
+    for r in resultado:
+        print(r)
+    
 
 if __name__ == "__main__":
-    edad = int(input("Cuantos años tienes? "))
-    anos(edad)
+    
+    ##ENTRADA
+    edad = int(input("Ingresa tu edad: "))
+    
+    ##SALIDA
+    
+    mensaje()
+
