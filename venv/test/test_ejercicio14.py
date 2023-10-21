@@ -1,0 +1,1 @@
+from src.ejercicio14 import sumatoria
